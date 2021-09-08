@@ -27,6 +27,6 @@ for (i = dayStart; i <= dayEnd; i++) {
     var activityEl = $("<div class='row hour-" + i + "'></div>");
 
     var hourEl = $("<div class='hour-" + i + "col-sm-1 hour py-3 text-right'>" +
-    moment(i, "HH").format("hh a") + "</div>S"
+    moment(i, "HH").format("hh a") + "</div>"
     );
 }
