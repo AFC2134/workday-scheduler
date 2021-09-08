@@ -3,11 +3,11 @@ var currentDayEl = $("#currentDay").text(moment().format("dddd, MMMM Do"));
 
 // day starts at 8am for work prep.
 var dayStart = 8;
-var endDay = 17;
+var dayEnd= 17;
 
 function loadAct(rowid) {
     return localStorage.getItem(rowid);
-}
+};
 
 
 function saveAct(rowid, content) {
@@ -16,4 +16,13 @@ function saveAct(rowid, content) {
     }else {
         localStorage.setItem(rowid, content);
     }
+};
+
+
+var currentHour = moment().format("HH");
+
+for (i = dayStart; i <= dayEnd; i++) {
+    iHour = moment(i, "HH").format("HH");
+    
+    var activityEl = $("<div class='row hour-" + i + "'></div>");
 }
