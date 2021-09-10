@@ -58,6 +58,8 @@ for (i = dayStart; i <= dayEnd; i++) {
     "style",
     "display:none"
   );
+  
+  
   var inputArea = $("<textarea/>")
     .attr("style", "width:100%")
     .addClass("hour-" + i)
@@ -66,6 +68,7 @@ for (i = dayStart; i <= dayEnd; i++) {
   inputDiv.append(inputArea);
   timerEl.append(displayEl,inputDiv);
 
+ 
   var saveBtnEl = $(
     "<div class='hour-" + i + " saveBtn py-4 col-sm-2 text-center'>Save</div>"
   );
